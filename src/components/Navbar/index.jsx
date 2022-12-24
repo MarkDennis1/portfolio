@@ -15,7 +15,9 @@ const Nav = () => {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>Download Resume</Button>
+        <a href="https://drive.google.com/file/d/1vAAM_NbYIlsGrlS5BNm_KrrGLfou27SV/view?usp=share_link">
+          <Button>Resume</Button>
+        </a>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
