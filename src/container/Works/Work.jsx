@@ -27,7 +27,7 @@ const Work = ({ image, title, github, demo }) => {
     }
   };
   return (
-    <div className="pointer-events-none w-[300px] p-6 flex flex-col gap-4 items-start bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div className="w-[300px] p-6 flex flex-col gap-4 items-start bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div className="w-[250px] h-[154px]">
         <img
           className="h-full w-full object-cover rounded-lg"

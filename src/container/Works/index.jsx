@@ -1,6 +1,5 @@
 import Work from "./Work";
 import { Works as works } from "../../constants";
-import { motion } from "framer-motion";
 
 const Works = () => {
   return (
@@ -11,10 +10,8 @@ const Works = () => {
       <h1 className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-4">
         Works
       </h1>
-      <motion.div className="w-full overflow-hidden shadow-md">
-        <motion.div
-          className="flex justify-start gap-4 p-4 w-full overflow-x-scroll"
-        >
+      <div className="w-full overflow-hidden shadow-md">
+        <div className="flex justify-start gap-4 p-4 overflow-x-scroll">
           {works.map((work, i) => (
             <Work
               key={i}
@@ -24,8 +21,8 @@ const Works = () => {
               demo={work.demo}
             />
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
