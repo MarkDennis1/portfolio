@@ -65,18 +65,6 @@ const About = () => {
               Sanity
             </a>
           </strong>{" "}
-          and ORMs like{" "}
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://prisma.io/">
-              Prisma
-            </a>
-          </strong>{" "}
-          and{" "}
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://sequelize.org/">
-              Sequelize
-            </a>
-          </strong>{" "}
           and staying up-to-date on the latest developments in the tech
           industry. When I have spare time, I love to watch movies, listen to
           music, read technical blogs, and play video games. I am excited to
