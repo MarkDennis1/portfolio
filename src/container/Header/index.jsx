@@ -49,7 +49,7 @@ const Header = () => {
             className="text-3xl text-gray-700 font-bold dark:text-white"
           >
             <Typewriter
-              words={["I am Mark Dennis Sanchez", "Web Developer"]}
+              words={["I am Mark Dennis Sanchez",]}
               loop={false}
               typeSpeed={30}
               deleteSpeed={30}

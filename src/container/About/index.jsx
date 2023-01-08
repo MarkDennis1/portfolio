@@ -44,20 +44,19 @@ const About = () => {
           </strong>
           . I am passionate about building user-friendly, visually appealing
           websites and applications that solve problems and make people's lives
-          easier.I enjoy dabbling a little on backend/fullstack frameworks like{" "}
+          easier.I enjoy dabbling on other stacks and frameworks like{" "}
           <strong>
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.mongodb.com/mern-stack"
             >
-              MERN
+              MERN, 
             </a>
           </strong>
-          , Laravel's{" "}
           <strong>
-            <a rel="noreferrer" target="_blank" href="https://sanity.io/">
-              Inertia.js
+            <a rel="noreferrer" target="_blank" href="https://laravel.com/">
+              {" "}Laravel
             </a>
           </strong>
           ,{" "}
