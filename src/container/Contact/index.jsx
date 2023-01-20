@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 // npm i @emailjs/browser
 
 const Contact = () => {
   const form = useRef();
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,7 +20,11 @@ const Contact = () => {
       .then(
         (result) => {
           if (result.text === "OK") {
-            console.log("success mofo");
+            setIsSuccess(true);
+            form.current.reset();
+            setTimeout(() => {
+              setIsSuccess(false);
+            }, 10000);
           } else {
             console.log(result.text);
           }
@@ -31,10 +36,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="h-[100vh] flex flex-col justify-center">
+    <section id="contact" className="h-screen flex flex-col justify-center">
       <h1 className="text-center text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-4">
         Contact me
       </h1>
+      {isSuccess && (
+        <div
+          className="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-gray-800 dark:text-green-400"
+          role="alert"
+        >
+          <span className="font-medium">Message Sent. </span>Thank you for stopping by.
+        </div>
+      )}
       <form ref={form} onSubmit={sendEmail}>
         <div className="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
           <div className="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
