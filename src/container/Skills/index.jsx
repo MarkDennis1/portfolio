@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="h-[100vh] flex flex-col justify-center items-center"
+      className="h-screen flex flex-col justify-center items-center"
     >
       <h1 className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-4">
         Skills
