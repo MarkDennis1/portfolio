@@ -20,7 +20,7 @@ const Works = [
   },
   {
     image: work02,
-    github: "https://github.com/MarkDennis1/tch-app",
+    github: "https://github.com/MarkDennis1/the-cat-house",
     demo: "",
     title: "The Cat House",
     description: "A scheduling system for cat adoptation",
