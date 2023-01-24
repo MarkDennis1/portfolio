@@ -47,16 +47,10 @@ const Header = () => {
         >
           <motion.div
             variants={leftChildVariant}
-            className="text-3xl text-gray-700 font-bold dark:text-white"
+            className="text-4xl text-gray-800 font-bold dark:text-white"
           >
-            <Typewriter
-              words={["I am Mark Dennis Sanchez"]}
-              loop={false}
-              typeSpeed={30}
-              deleteSpeed={30}
-              cursor
-              cursorStyle="_"
-            />
+            Mark Dennis Sanchez
+            <p className="text-sm text-gray-500">BSIT STUDENT</p>
           </motion.div>
           <motion.div
             variants={leftChildVariant}
