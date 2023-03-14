@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 const Skill = ({ image, title }) => {
   return (
     <motion.div
-      initial={{  }}
-      whileInView={{  }}
-      className="max-w-[200px] bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      className="w-full h-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <div className="flex flex-col justify-between items-center">
         <div className="py-4">
