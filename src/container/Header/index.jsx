@@ -1,7 +1,6 @@
 import React from "react";
 import { Images, HeaderAnimation, HeaderArrowDown } from "../../constants";
 import Lottie from "lottie-react";
-import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 const parentVariant = {
