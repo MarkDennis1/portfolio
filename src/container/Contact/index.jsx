@@ -45,7 +45,8 @@ const Contact = () => {
           className="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-gray-800 dark:text-green-400"
           role="alert"
         >
-          <span className="font-medium">Message Sent. </span>Thank you for stopping by.
+          <span className="font-medium">Message Sent. </span>Thank you for
+          stopping by.
         </div>
       )}
       <form ref={form} onSubmit={sendEmail}>
@@ -97,7 +98,7 @@ const Contact = () => {
               id="comment"
               name="message"
               rows="4"
-              className="w-full px-0 text-sm text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+              className="focus:ring-blue-500 focus:ring-1 focus:border-blue-500 p-2.5 bg-gray-50 border border-gray-300 rounded-lg w-full text-sm text-gray-900 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400"
               placeholder="Write a message..."
               required
             ></textarea>
