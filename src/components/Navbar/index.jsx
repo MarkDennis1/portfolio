@@ -25,7 +25,7 @@ const Nav = () => {
           <Navbar.Link href="#header">Home</Navbar.Link>
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
-          <Navbar.Link href="#about">About me</Navbar.Link>
+          <Navbar.Link href="#about">About</Navbar.Link>
         </motion.div>
         <motion.div whileHover={{ scale: 1.2 }}>
           <Navbar.Link href="#skills">Skills</Navbar.Link>
