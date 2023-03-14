@@ -1,23 +1,47 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const parentVariant = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.3,
+      staggerDirection: 1,
+    },
+  },
+};
+
+const childVariant = {
+  hidden: {
+    y: 300,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 const About = () => {
   return (
     <motion.section
+      variants={parentVariant}
+      initial="hidden"
+      whileInView="visible"
       id="about"
       className="h-[100vh] flex flex-col justify-center items-center"
     >
-      <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        exit={{ scale: 0 }}
-        transition={{ duration: 1, type: "spring", damping: 5 }}
-        className="grid place-items-center"
-      >
-        <h1 className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-4">
+      <motion.div className="grid place-items-center">
+        <motion.h1
+          variants={childVariant}
+          className="text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white py-4"
+        >
           Know me
-        </h1>
-        <p className="px-4 font-light text-gray-500 dark:text-gray-400">
+        </motion.h1>
+        <motion.p
+          variants={childVariant}
+          className="px-4 font-light text-gray-500 dark:text-gray-400"
+        >
           Hi, I am Mark Dennis Sanchez an aspiring web developer. I am currently
           learning and developing my skills in web development, with a focus on
           popular frameworks such as{" "}
@@ -51,12 +75,13 @@ const About = () => {
               target="_blank"
               href="https://www.mongodb.com/mern-stack"
             >
-              MERN, 
+              MERN,
             </a>
           </strong>
           <strong>
             <a rel="noreferrer" target="_blank" href="https://laravel.com/">
-              {" "}Laravel
+              {" "}
+              Laravel
             </a>
           </strong>
           ,{" "}
@@ -70,7 +95,7 @@ const About = () => {
           music, read technical blogs, and play video games. I am excited to
           continue learning and growing as a web developer and to one day build
           innovative and impactful projects for my clients or employers.
-        </p>
+        </motion.p>
       </motion.div>
     </motion.section>
   );
