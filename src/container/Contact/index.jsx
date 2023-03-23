@@ -56,7 +56,7 @@ const Contact = () => {
               htmlFor="website-admin"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Name
+              Name
             </label>
             <div className="flex">
               <input
@@ -72,7 +72,7 @@ const Contact = () => {
               htmlFor="input-group-1"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Email
+              Email
             </label>
             <div className="relative mb-6">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -86,6 +86,12 @@ const Contact = () => {
                 required
               />
             </div>
+            <label
+              htmlFor="input-group-1"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Message
+            </label>
             <textarea
               id="comment"
               name="message"
