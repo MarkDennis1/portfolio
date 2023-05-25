@@ -43,7 +43,9 @@ const About = () => {
           className="px-4 font-light text-gray-500 dark:text-gray-400"
         >
           Hello I'm Mark Dennis Sanchez, an aspiring web developer with a focus on back-end frameworks like
-          Laravel and{" "}
+          <a className="underline" rel="noreferrer" target="_blank" href="https://www.laravel.com">
+            Laravel
+          </a> and{" "}
           <a className="underline" rel="noreferrer" target="_blank" href="https://www.nodejs.org">
             NodeJS
           </a>{" "}
