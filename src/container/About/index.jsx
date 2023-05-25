@@ -42,59 +42,24 @@ const About = () => {
           variants={childVariant}
           className="px-4 font-light text-gray-500 dark:text-gray-400"
         >
-          Hi, I am Mark Dennis Sanchez an aspiring web developer. I am currently
-          learning and developing my skills in web development, with a focus on
-          popular frameworks such as{" "}
-          <strong>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://beta.reactjs.org/"
-            >
-              React
-            </a>
-          </strong>
-          ,{" "}
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://nextjs.org/">
-              Next
-            </a>
-          </strong>{" "}
+          Hello I'm Mark Dennis Sanchez, an aspiring web developer with a focus on back-end frameworks like
+          Laravel and{" "}
+          <a className="underline" rel="noreferrer" target="_blank" href="https://www.nodejs.org">
+            NodeJS
+          </a>{" "}
+          <a className="underline" rel="noreferrer" target="_blank" href="https://www.expressjs.com">
+            Express
+          </a>
+          , as well as front-end technologies including{" "}
+          <a className="underline" rel="noreferrer" target="_blank" href="https://www.vuejs.org">
+            Vue
+          </a>{" "}
           and{" "}
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://vuejs.org/">
-              Vue
-            </a>
-          </strong>
-          . I am passionate about building user-friendly, visually appealing
-          websites and applications that solve problems and make people's lives
-          easier.I enjoy dabbling on other stacks and frameworks like{" "}
-          <strong>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://www.mongodb.com/mern-stack"
-            >
-              MERN,
-            </a>
-          </strong>
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://laravel.com/">
-              {" "}
-              Laravel
-            </a>
-          </strong>
-          ,{" "}
-          <strong>
-            <a rel="noreferrer" target="_blank" href="https://sanity.io/">
-              Sanity
-            </a>
-          </strong>{" "}
-          and staying up-to-date on the latest developments in the tech
-          industry. When I have spare time, I love to watch movies, listen to
-          music, read technical blogs, and play video games. I am excited to
-          continue learning and growing as a web developer and to one day build
-          innovative and impactful projects for my clients or employers.
+          <a className="underline" rel="noreferrer" target="_blank" href="https://www.nextjs.org">
+            React
+          </a>
+          . Seeking opportunities to apply my expertise and contribute to
+          innovative projects that make a positive impact on people's lives.
         </motion.p>
       </motion.div>
     </motion.section>
